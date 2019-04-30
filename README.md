@@ -4,6 +4,6 @@ Seenetuvastaja on 2019. aastal bakalaureusetöö raames valminud mobiilirakendus
 
 Repositoorium sisaldab:
 
-* baasandmestikku ja selle kogumiseks kirjutatud skripte
-* tehisnärvivõrgu mudeli loomise lähtekoodi
-* mobiilirakenduse lähtekoodi
+* baasandmestikku kogumiseks kirjutatud skripte (`\skriptid`)
+* tehisnärvivõrgu mudeli loomise lähtekoodi (`\mudel`)
+* mobiilirakenduse lähtekoodi (`rakendus`)
