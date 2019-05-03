@@ -10,6 +10,7 @@ import com.seenetuvastaja.seenetuvastaja.model.Mushroom;
 import com.seenetuvastaja.seenetuvastaja.model.MushroomAdapter;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ResultActivity extends AppCompatActivity {
 
