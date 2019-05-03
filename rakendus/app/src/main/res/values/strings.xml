@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Seenetuvastaja</string>
+
+    <string name="take_picture_button">TEE PILT</string>
+    <string name="choose_picture_button">VALI PILT GALERIIST</string>
+
+    <string name="file_not_found_exception">Pildi laadimisel ilmnes viga!</string>
+    <string name="model_loading_ioexception">Mudeli laadimisel ilmnes viga!</string>
+    <string name="unidentified_exception">Ilmnes viga!</string>
+    <string name="identification_exception">Seene tuvastamisel ilmnes viga!</string>
+    <string name="result_exception">Tulemuse kuvamisel ilmnes viga!</string>
+</resources>

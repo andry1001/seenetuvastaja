@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:background="@drawable/background">
+
+    <ListView
+        android:id="@+id/predictionList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#008000"
+        android:dividerHeight="1dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="@android:color/transparent"/>
+</android.support.design.widget.CoordinatorLayout>
