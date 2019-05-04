@@ -37,7 +37,19 @@ public class ResultActivity extends AppCompatActivity {
                  */
                 ArrayList<Mushroom> mushrooms = b.getParcelableArrayList("mushrooms");
                 float[] probabilities = b.getFloatArray("probabilities");
-                MushroomAdapter adapter = new MushroomAdapter(this, mushrooms, probabilities);
+                ArrayList<Float> suitedProbs = new ArrayList<>();
+                for (float prob : probabilities) {
+                    if (prob > 0.01f) suitedProbs.add(prob);
+                }
+                ArrayList<Mushroom> suitedShrooms = new ArrayList<>();
+                for (int i = 0; i < suitedProbs.size(); i++) {
+                    suitedShrooms.add(mushrooms.get(i));
+                }
+                float[] finalProbs = new float[suitedProbs.size()];
+                for (int i = 0; i < suitedProbs.size(); i++) {
+                    finalProbs[i] = suitedProbs.get(i);
+                }
+                MushroomAdapter adapter = new MushroomAdapter(this, suitedShrooms, finalProbs);
                 predictionList.setAdapter(adapter);
                 Log.i("Result", "Set prediction!");
             }

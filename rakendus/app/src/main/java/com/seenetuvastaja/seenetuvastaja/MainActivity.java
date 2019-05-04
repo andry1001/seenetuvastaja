@@ -128,7 +128,9 @@ public class MainActivity extends AppCompatActivity {
         if (checkPermission(Manifest.permission.CAMERA)) {
             activateTakePictureIntent();
         } else {
-            askPermission(CAMERA_PERMISSION_REQUEST_CODE);
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.CAMERA},
+                    CAMERA_PERMISSION_REQUEST_CODE);
         }
     }
 
@@ -143,7 +145,9 @@ public class MainActivity extends AppCompatActivity {
         if (checkPermission(Manifest.permission.READ_EXTERNAL_STORAGE)) {
             activateChoosePictureIntent();
         } else {
-            askPermission(STORAGE_PERMISSION_REQUEST_CODE);
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                    STORAGE_PERMISSION_REQUEST_CODE);
         }
     }
 
@@ -160,24 +164,6 @@ public class MainActivity extends AppCompatActivity {
             return false;
         } else return true;
 
-    }
-
-    public void askPermission(int permissionCode) {
-        ActivityCompat.requestPermissions(this,
-                new String[]{Manifest.permission.CAMERA},
-                permissionCode);
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-        switch (requestCode) {
-            case CAMERA_PERMISSION_REQUEST_CODE:
-                if (grantResults[0] == PackageManager.PERMISSION_GRANTED)
-                    activateTakePictureIntent();
-            case STORAGE_PERMISSION_REQUEST_CODE:
-                if (grantResults[0] == PackageManager.PERMISSION_GRANTED)
-                    activateChoosePictureIntent();
-        }
     }
 
 }
