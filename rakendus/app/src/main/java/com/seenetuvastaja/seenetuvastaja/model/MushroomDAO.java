@@ -1,5 +1,7 @@
 package com.seenetuvastaja.seenetuvastaja.model;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -95,6 +97,8 @@ public class MushroomDAO {
         for (int i = 0; i < labels.length; i++) {
             Mushroom m = getByBinomialName(labels[i]);
             m.setID(i);
+            //String s = "\"" + m.getEstonianName().toLowerCase() + "\"" + ": " + "\"" + m.getBinomialName().toLowerCase() + "\"";
+            //Log.i("VAJALIK", s);
         }
     }
 

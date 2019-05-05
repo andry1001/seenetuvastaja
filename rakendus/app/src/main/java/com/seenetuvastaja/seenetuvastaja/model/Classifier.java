@@ -22,12 +22,12 @@ public class Classifier {
 
     //Treeninghulga keskmised ja standardhälved pikslite kaupa.
     // Võetud kujul [[[B, G, R]]] närvivõrgu mudelist.
-    private static float MEAN_B = 61.236965f;
-    private static float MEAN_G = 83.059135f;
-    private static float MEAN_R = 85.63649f;
-    private static float STD_B = 54.313713f;
-    private static float STD_G = 55.401028f;
-    private static float STD_R = 59.339054f;
+    private static float MEAN_B = 60.677322f;
+    private static float MEAN_G = 83.14294f;
+    private static float MEAN_R= 83.190605f;
+    private static float STD_B = 53.83338f;
+    private static float STD_G = 54.729652f;
+    private static float STD_R = 58.82246f;
 
     /*
     Järgneva meetodi loomisel on võetud aluseks kood leheküljelt:
