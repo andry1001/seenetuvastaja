@@ -7,6 +7,7 @@ Repositoorium sisaldab:
 * baasandmestikku kogumiseks kirjutatud skripte (`\skriptid`)
 * tehisnärvivõrgu mudeli loomise lähtekoodi (`\mudel`)
 * mobiilirakenduse lähtekoodi (`\rakendus`)
+* segadusmaatriksi raportit  (`confusion.html`)
 
 ```diff
 - HOIATUS
@@ -14,4 +15,8 @@ Repositoorium sisaldab:
 - Rakenduse looja ei vastuta valest ennustusest innustatud seene söömisest tulenevate terviserikete eest!
 - Rakenduse kasutamine omal vastutusel!
 ```
+
+## Confusion matrix report reference
+
+    Haghighi, S., Jasemi, M., Hessabi, S. and Zolanvari, A. (2018). PyCM: Multiclass confusion matrix library in Python. Journal of Open Source Software, 3(25), p.729.
 
