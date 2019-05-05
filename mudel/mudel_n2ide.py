@@ -1,4 +1,4 @@
-#################################
+﻿#################################
 # SEE ON MUDELI LOOMISE NÄIDE   #
 #################################
 import cv2
@@ -44,8 +44,8 @@ dataset = np.array(dataset)
 np.random.shuffle(dataset)
 X_data, y_data = dataset[:, 0], dataset[:, 1]
 
-X_train, X_test, y_train, y_test = train_test_split(X_data, y_data, test_size=0.20, random_state=42)
-X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.15, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X_data, y_data, test_size=0.3, random_state=42)
+X_test, X_val, y_test, y_val = train_test_split(X_test, y_test, test_size=0.5, random_state=42)
 
 X_train = np.stack(X_train)
 X_test = np.stack(X_test)
