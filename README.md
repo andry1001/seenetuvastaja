@@ -7,7 +7,6 @@ Repositoorium sisaldab:
 * baasandmestikku kogumiseks kirjutatud skripte (`\skriptid`)
 * tehisnärvivõrgu mudeli loomise lähtekoodi (`\mudel`)
 * mobiilirakenduse lähtekoodi (`\rakendus`)
-* segadusmaatriksi raportit  (`confusion.html`)
 
 ```diff
 - HOIATUS
